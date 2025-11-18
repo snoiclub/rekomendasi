@@ -129,9 +129,9 @@ export const QUIZ_QUESTIONS: QuizQuestion[] = [
         affects: ['max_speed_kmh', 'motor_power_max_w'],
       },
       {
-        id: 'usage_ojol',
-        label: 'Produksi / ojol / jarak jauh',
-        value: 'ojol',
+        id: 'usage_production',
+        label: 'Jarak jauh',
+        value: 'production',
         affects: ['max_range_km', 'battery_capacity_wh', 'unit_weight_kg'],
       },
     ],

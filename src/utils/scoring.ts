@@ -142,9 +142,9 @@ export function calculateScores(
     if (usageType === 'commute' && sizeCategory === 'compact' && weight !== null && weight < 16) {
       matchDetails.usage = 100;
       reasons.push('Cocok untuk komuter harian (ringan & compact)');
-    } else if (usageType === 'ojol' && range !== null && range >= 40) {
+    } else if (usageType === 'production' && range !== null && range >= 40) {
       matchDetails.usage = 100;
-      reasons.push('Cocok untuk ojol (range panjang)');
+      reasons.push('Cocok untuk produksi/jarak jauh (range panjang)');
     } else if (usageType === 'weekend' && motorPower !== null && motorPower >= 350) {
       matchDetails.usage = 100;
       reasons.push('Cocok untuk hobi weekend (motor kuat)');
