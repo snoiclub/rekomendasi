@@ -9,7 +9,7 @@
   "motor_power_max_w": 450,
   "max_speed_kmh": 20,
   "max_range_km": 25,
-  "max_driver_weight_kg": 90,
+  "max_payload_kg": 90,
   "unit_weight_kg": 16.3,
   "foldable": true,
   "front_brake": "electronic",

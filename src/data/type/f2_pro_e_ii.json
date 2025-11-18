@@ -9,7 +9,7 @@
   "motor_power_max_w": 900,
   "max_speed_kmh": 25,
   "max_range_km": 65,
-  "max_driver_weight_kg": 120,
+  "max_payload_kg": 120,
   "unit_weight_kg": 17.75,
   "foldable": true,
   "front_brake": "mechanical_disc",

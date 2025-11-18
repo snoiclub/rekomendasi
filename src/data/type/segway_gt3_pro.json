@@ -9,7 +9,7 @@
   "motor_power_max_w": 3500,
   "max_speed_kmh": 80,
   "max_range_km": 138,
-  "max_driver_weight_kg": 150,
+  "max_payload_kg": 150,
   "unit_weight_kg": 53.1,
   "foldable": true,
   "front_brake": "hydraulic_disc",

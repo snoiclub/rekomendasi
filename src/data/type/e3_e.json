@@ -9,7 +9,7 @@
   "motor_power_max_w": 800,
   "max_speed_kmh": 30,
   "max_range_km": 45,
-  "max_driver_weight_kg": 100,
+  "max_payload_kg": 100,
   "unit_weight_kg": 17.5,
   "foldable": true,
   "front_brake": "drum",

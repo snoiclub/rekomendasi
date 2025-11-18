@@ -28,7 +28,7 @@ export interface Scooter {
   motor_power_max_w: number | null;
   max_speed_kmh: number | null;
   max_range_km: number | null;
-  max_driver_weight_kg: number | null;
+  max_payload_kg: number | null;
   unit_weight_kg: number | null;
   foldable: boolean;
   front_brake:
