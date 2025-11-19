@@ -1,27 +1,34 @@
-import Recommendation from '@/components/Recommendation';
+import Recommendation from "@/components/Recommendation";
+import { getScooters } from "@/db";
+import { Suspense } from "react";
 
 export default function Home() {
+  const scooters = getScooters();
   return (
     <main className="bg-slate-50 min-h-screen py-12">
       <section id="quiz" className="max-w-5xl mx-auto px-6">
         <div className="text-center mb-10">
-          <h1 className="text-3xl font-semibold text-slate-900">Rekomendasi SNOI</h1>
+          <h1 className="text-3xl font-semibold text-slate-900">
+            Rekomendasi SNOI
+          </h1>
           <p className="mt-2 text-slate-500">
             Pilih scooter untuk kebutuhan harianmu
           </p>
         </div>
-        <Recommendation />
+        <Suspense fallback={<div>Loading...</div>}>
+          <Recommendation scooters={scooters} />
+        </Suspense>
       </section>
-      
+
       <footer className="mt-16 py-6 border-t border-slate-200">
         <div className="max-w-5xl mx-auto px-6 text-center">
           <p className="text-sm text-slate-500">
             © {new Date().getFullYear()} SNOI DevHub
           </p>
           <p className="mt-2 text-sm text-slate-500">
-            <a 
-              href="https://github.com/snoiclub/rekomendasi" 
-              target="_blank" 
+            <a
+              href="https://github.com/snoiclub/rekomendasi"
+              target="_blank"
               rel="noopener noreferrer"
               className="text-indigo-600 hover:text-indigo-700 underline transition-colors"
             >
@@ -33,4 +40,3 @@ export default function Home() {
     </main>
   );
 }
-

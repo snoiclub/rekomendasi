@@ -10,18 +10,25 @@
     "type-check": "tsc --noEmit"
   },
   "dependencies": {
+    "@libsql/client": "^0.15.15",
+    "dotenv": "^17.2.3",
+    "drizzle-orm": "^0.44.7",
     "next": "^14.0.0",
     "preline": "^3.2.3",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "valibot": "^1.1.0"
   },
   "devDependencies": {
     "@types/node": "^20.0.0",
     "@types/react": "^18.2.0",
     "@types/react-dom": "^18.2.0",
     "autoprefixer": "^10.4.16",
+    "drizzle-kit": "^0.31.7",
     "postcss": "^8.4.32",
     "tailwindcss": "^3.4.0",
+    "ts-node": "^10.9.2",
+    "tsconfig-paths": "^4.2.0",
     "typescript": "^5.0.0"
   }
 }
